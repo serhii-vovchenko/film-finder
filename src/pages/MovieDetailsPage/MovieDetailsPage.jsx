@@ -10,7 +10,7 @@ import {
     useParams,
 } from 'react-router-dom';
 
-import searchMovies from '../../../services/api-query';
+import searchMovies from '../../services/api-query';
 
 const MovieDetailsPage = () => {
     const [movieDetails, setMovieDetails] = useState([]);

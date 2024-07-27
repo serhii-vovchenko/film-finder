@@ -2,8 +2,8 @@ import s from './HomePage.module.css';
 
 import { useEffect, useState } from 'react';
 
-import MovieList from '../../MovieList/MovieList';
-import searchMovies from '../../../services/api-query';
+import MovieList from '../../components/MovieList/MovieList';
+import searchMovies from '../../services/api-query';
 
 const HomePage = () => {
     const [trendingMovies, setTrendingMovies] = useState([]);

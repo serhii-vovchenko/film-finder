@@ -3,8 +3,8 @@ import s from './MoviePage.module.css';
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
-import MovieList from '../../MovieList/MovieList';
-import searchMovies from '../../../services/api-query';
+import MovieList from '../../components/MovieList/MovieList';
+import searchMovies from '../../services/api-query';
 
 const MoviesPage = () => {
     const [searchUserMovies, setSearchUserMovies] = useState([]);
