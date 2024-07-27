@@ -1,0 +1,25 @@
+.wrapper {
+    padding: 20px 160px;
+    display: flex;
+    gap: 30px 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.itemWrapper {
+    padding: 20px 10px;
+    width: 200px;
+    box-shadow: 0 0 15px -5px;
+    border-radius: 4px;
+}
+
+.imgWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    width: 200px;
+    margin-top: 25px;
+}

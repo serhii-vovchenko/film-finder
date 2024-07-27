@@ -1,0 +1,33 @@
+.wrapper {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.actorWrapper {
+    width: 220px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    box-shadow: 0 0 15px -5px;
+    padding: 10px;
+
+    & div {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.title {
+    font-size: 16px;
+    text-align: center;
+}
+
+.text {
+    font-size: 14px;
+    text-align: center;
+}
