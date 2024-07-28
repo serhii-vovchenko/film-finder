@@ -42,9 +42,10 @@ const MovieCast = () => {
                                 width="200"
                             />
                         </div>
-
-                        <h3 className={s.title}>{name}</h3>
-                        <p className={s.text}>Character: {character}</p>
+                        <div>
+                            <h3 className={s.title}>{name}</h3>
+                            <p className={s.text}>Character: {character}</p>
+                        </div>
                     </li>
                 );
             })}

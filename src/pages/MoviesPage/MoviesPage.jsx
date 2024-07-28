@@ -21,8 +21,10 @@ const MoviesPage = () => {
             return;
         }
 
-        searchParams.set('query', queryText.toLowerCase());
-        setSearchParams(searchParams);
+        // searchParams.set('query', queryText.toLowerCase());
+        // setSearchParams(searchParams);
+
+        setSearchParams(searchParams.set('query', queryText.toLowerCase()));
 
         event.target.reset();
     };

@@ -7,12 +7,11 @@
 }
 
 .actorWrapper {
-    width: 220px;
-
+    width: 247px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    justify-content: center;
+    justify-content: space-between;
     box-shadow: 0 0 15px -5px;
     padding-bottom: 12px;
     border-radius: 8px;
@@ -20,10 +19,6 @@
     transition: transform 250ms ease-in-out;
 
     & div {
-        display: flex;
-        justify-content: center;
-        box-shadow: 0 0 20px -5px;
-
         & img {
             width: 100%;
             object-fit: cover;
@@ -41,6 +36,6 @@
 }
 
 .text {
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
 }
