@@ -29,8 +29,9 @@ const MoviesPage = () => {
 
     useEffect(() => {
         const searchHandleMovies = async () => {
-            const response = await searchMovies(`${BASE_URL}${userQuery}`);
             try {
+                const response = await searchMovies(`${BASE_URL}${userQuery}`);
+
                 setSearchUserMovies(response);
             } catch (error) {
                 console.log(error);

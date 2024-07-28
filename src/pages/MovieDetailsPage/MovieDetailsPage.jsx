@@ -28,8 +28,11 @@ const MovieDetailsPage = () => {
 
     useEffect(() => {
         const searchMovieDetailsForId = async () => {
-            const response = await searchMovies(`${BASE_URL}${params.movieId}`);
             try {
+                const response = await searchMovies(
+                    `${BASE_URL}${params.movieId}`
+                );
+
                 setMovieDetails(response);
                 setMovieGenres(response.genres);
             } catch (error) {

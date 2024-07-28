@@ -11,8 +11,9 @@ const HomePage = () => {
 
     useEffect(() => {
         const searchTrendingMoviesToday = async () => {
-            const response = await searchMovies(BASE_URL);
             try {
+                const response = await searchMovies(BASE_URL);
+
                 setTrendingMovies(response);
             } catch (error) {
                 console.log(error);

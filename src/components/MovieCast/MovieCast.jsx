@@ -12,10 +12,11 @@ const MovieCast = () => {
 
     useEffect(() => {
         const searchMovieCast = async () => {
-            const response = await searchMovies(
-                `${BASE_URL}${params.movieId}/credits`
-            );
             try {
+                const response = await searchMovies(
+                    `${BASE_URL}${params.movieId}/credits`
+                );
+
                 setMovieCast(response.cast);
             } catch (error) {
                 console.log(error);

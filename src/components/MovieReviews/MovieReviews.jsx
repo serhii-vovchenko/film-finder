@@ -13,10 +13,11 @@ const MovieReviews = () => {
 
     useEffect(() => {
         const searchMovieReviews = async () => {
-            const response = await searchMovies(
-                `${BASE_URL}${params.movieId}/reviews`
-            );
             try {
+                const response = await searchMovies(
+                    `${BASE_URL}${params.movieId}/reviews`
+                );
+
                 setMovieReviews(response.results);
             } catch (error) {
                 console.log(error);
