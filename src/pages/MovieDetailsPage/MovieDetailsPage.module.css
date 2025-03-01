@@ -1,98 +1,128 @@
 .wrapper {
-    padding: 5px 160px 40px;
+	padding: 5px 20px 40px;
 }
 
 .btn {
-    display: inline-block;
-    background-color: rgb(168, 168, 168);
+	display: inline-block;
+	background-color: rgb(168, 168, 168);
 
-    border-radius: 4px;
-    margin: 10px 0;
-    padding: 0 20px;
-    transition: background-color 0.25s;
+	border-radius: 4px;
+	margin: 10px 0;
+	padding: 0 20px;
+	transition: background-color 0.25s;
 
-    & a {
-        color: white;
-        font-size: 14px;
-        font-weight: 500;
-    }
+	& a {
+		color: white;
+		font-size: 14px;
+		font-weight: 500;
+	}
 }
 
 .btn:hover {
-    background-color: rgb(108, 108, 108);
+	background-color: rgb(108, 108, 108);
 }
 
 .movieInfo {
-    display: flex;
-    gap: 100px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
 }
 
 .img {
-    box-shadow: 0 0 20px -5px;
+	width: 100%;
+	max-width: 400px;
+	box-shadow: 0 0 20px -5px;
+	margin: 0 auto;
 }
 
 .movieDetails {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-shadow: 0 0 20px -5px;
-
-    padding: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	box-shadow: 0 0 20px -5px;
+	padding: 20px;
+	text-align: justify;
 }
 
 .title {
-    font-size: 36px;
+	font-size: 28px;
 }
 
 .h3 {
-    font-size: 24px;
+	font-size: 20px;
 }
 
 .text {
-    font-size: 18px;
+	font-size: 18px;
 }
 
 .genres {
-    display: flex;
-    gap: 10px;
+	display: flex;
+	gap: 10px;
 }
 
 .additional {
-    min-width: 696px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    box-shadow: 0 0 20px -5px;
-    padding: 20px 75px;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	box-shadow: 0 0 20px -5px;
+	padding: 20px;
 }
 
 .additionalList {
-    display: flex;
-    gap: 20px;
+	display: flex;
+	gap: 20px;
 }
 
 .additionalLink {
-    & a {
-        font-size: 18px;
-        font-weight: 500;
-    }
+	& a {
+		font-size: 18px;
+		font-weight: 500;
+	}
 }
 
 .link {
-    font-size: 18px;
-    font-weight: 600;
-    color: gray;
+	font-size: 18px;
+	font-weight: 600;
+	color: gray;
 }
 
 .link:hover {
-    color: rgb(74, 74, 74);
+	color: rgb(74, 74, 74);
 }
 
 .active {
-    color: rgb(78, 30, 201);
+	color: rgb(78, 30, 201);
 }
 
 .loader {
-    margin-top: 10px;
+	margin-top: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+	.wrapper {
+		padding: 5px 80px 40px;
+	}
+
+	.movieInfo {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.movieDetails {
+		width: 100%;
+	}
+
+	.title {
+		font-size: 36px;
+	}
+
+	.h3 {
+		font-size: 24px;
+	}
+
+	.additional {
+		padding: 20px 75px;
+	}
 }

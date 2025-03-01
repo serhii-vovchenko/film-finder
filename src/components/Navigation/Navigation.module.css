@@ -1,25 +1,30 @@
 .wrapper {
-    width: 100%;
-    padding: 20px 160px;
-    background-color: white;
-    box-shadow: -5px 5px 15px -5px;
+	padding: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px -5px;
 }
 
 .navlist {
-    display: flex;
-    gap: 20px;
+	display: flex;
+	gap: 20px;
 }
 
 .link {
-    font-size: 18px;
-    font-weight: 600;
-    color: gray;
+	font-size: 18px;
+	font-weight: 600;
+	color: gray;
 }
 
 .link:hover {
-    color: rgb(74, 74, 74);
+	color: rgb(74, 74, 74);
 }
 
 .active {
-    color: rgb(78, 30, 201);
+	color: rgb(78, 30, 201);
+}
+
+@media screen and (min-width: 768px) {
+	.wrapper {
+		padding: 20px 80px;
+	}
 }

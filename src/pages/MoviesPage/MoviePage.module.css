@@ -1,30 +1,31 @@
 .form {
-    padding: 20px 160px 0;
-    display: flex;
-    gap: 10px;
+	padding: 20px;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
 }
 
 .input {
-    width: 260px;
-    padding: 8px 12px;
-    font-size: 14px;
-    border-radius: 8px;
-    border: 1px solid gray;
-    outline: none;
+	width: 220px;
+	padding: 8px 12px;
+	font-size: 14px;
+	border-radius: 8px;
+	border: 1px solid gray;
+	outline: none;
 }
 
 .btn {
-    padding: 0 20px;
-    border-radius: 8px;
-    border: 1px solid gray;
-    background-color: rgb(168, 168, 168);
-    cursor: pointer;
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
-    transition: background-color 0.25s;
+	padding: 0 10px;
+	border-radius: 8px;
+	border: 1px solid gray;
+	background-color: rgb(168, 168, 168);
+	cursor: pointer;
+	color: white;
+	font-size: 14px;
+	font-weight: 500;
+	transition: background-color 0.25s;
 }
 
 .btn:hover {
-    background-color: rgb(108, 108, 108);
+	background-color: rgb(108, 108, 108);
 }
